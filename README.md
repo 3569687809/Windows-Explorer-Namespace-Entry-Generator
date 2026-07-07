@@ -30,3 +30,27 @@ HKCU\Software\Classes\CLSID
 
 Windows 10
 Windows 11
+
+---
+
+## 如何编译？
+
+### 第一步
+打开 CMD
+输入命令 `pip install pyinstaller`
+
+### 第二步
+打开CMD 进入你解压的路径
+
+### 第三步
++ 在CMD中输入
+
+`pyinstaller ^
+--onefile ^
+--windowed ^
+--icon assets\app.ico ^
+--add-data "assets;assets" ^
+--name Windows此电脑入口生成器 ^
+main.py`
+
+* 最后会出现在\dist\ 这个目录下面
